@@ -19,11 +19,11 @@ function play(e) {
 
 //get computer choice
 function getComputerChoice() {
-  const rand = Math.random();
+  const rand = Math.floor(Math.random() * 3);
 
-  if (rand < 0.34) {
+  if (rand === 0) {
     return "rock";
-  } else if (rand <= 0.67) {
+  } else if (rand === 1) {
     return "paper";
   } else {
     return "scissors";
